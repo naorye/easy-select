@@ -1,15 +1,13 @@
-# Easy Select Plugin [http://www.webdeveasy.com/easy-select-plugin](http://www.webdeveasy.com/easy-select-plugin)
+# Easy Select Plugin
+
+<a href="http://www.webdeveasy.com/easy-select-plugin" target="_blank">http://www.webdeveasy.com/easy-select-plugin</a>
 
 ## Getting Started
 1. Download the plugin from <a href="https://github.com/naorye/easy-select/archive/master.zip" target="_blank">here</a>.
 2. Add a reference to jquery.easy-select.js and easy-select.css in your page. You can use the minified version instead by using jquery.easy-select.min.js and easy-select.min.css.  
 3. In order to use the plugin on text input element:
-```html Text input element
-<input type="text" class="my-input" />
-```
-```javascript easy-select usage
-$('.my-input').easySelect();
-```
+Markup: ```<input type="text" class="my-input" />```
+JavaScript: ```$('.my-input').easySelect();```
 
 ## Options
 Easy select has a few options:   
@@ -36,18 +34,15 @@ A callback function that triggered every time a new item gets selected.
 
 ## Methods
 Easy select has also a few useful methods. In order to use them you need to access the API object:
-```javascript Accessing easy-select API object
-$('.my-input').data('easySelect');
-``` 
+```$('.my-input').data('easySelect');``` 
+
 #### getValue()
 In order to get the selectd text you can read the value of your text input. getValue() method returns the value (or id) of the selected item.
-```javascript Usage example
-$('.my-input').data('easySelect').getValue();
-```
+```$('.my-input').data('easySelect').getValue();```
 
 #### setItems()
 setItems() method lets you change the items list during runtime. This method is useful when you want to load data asynchronously.
-```javascript Usage example
+```
 $.get('url/to/data').done(function(items) {
     $('.my-input').data('easySelect').setItems(items);
 });
@@ -55,9 +50,7 @@ $.get('url/to/data').done(function(items) {
 
 #### destroy()
 destroy() method destroys the plugin by removing unnecessary elements and unbinding events.
-```javascript Usage example
-$('.my-input').data('easySelect').destroy();
-```
+```]$('.my-input').data('easySelect').destroy();```
 ## Contributing
 
 1. Fork it!
