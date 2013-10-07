@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Easy Select - Demo page</title>
+		<script src="jquery-2.0.3.min.js"></script>
+
+		<script src="../dist/jquery.easy-select.js"></script>
+		<link href="../dist/easy-select.css" rel="stylesheet" type="text/css" />
+
+		<link href="index.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="field">
+				<label class="title">Choose Continent:</label>
+				<input class="continent-input" type="text" />
+				<span class="note">Continents list is loaded in declaration</span>
+				<a class="code-trigger" href="javascript:void(0)">Show code</a>	
+				<div class="code">
+$('.continent-input').easySelect({
+	idKey: 'value',
+	textKey: 'name',
+	items: [
+		{ name: 'Africa', value: 1},
+		{ name: 'Antarctica', value: 2},
+		{ name: 'Asia', value: 3},
+		{ name: 'Australia', value: 4},
+		{ name: 'Europe', value: 5},
+		{ name: 'North America', value: 6},
+		{ name: 'South America', value: 7}
+	]
+});
+				</div>
+			</div>	
+			<div class="field">
+				<label class="title">Choose US State:</label>
+				<input class="state-input" type="text" />
+				<span class="note">States list is loaded asynchronously</span>	
+				<a class="code-trigger" href="javascript:void(0)">Show code</a>
+				<div class="code">
+$('.state-input').easySelect({
+	idKey: 'id',
+	textKey: 'text'
+});
+
+$.get('data/states.json').done(function(items) {
+	// Each item looks like { id:'KS', text: 'Kansas' }
+	$('.state-input').data('easySelect').setItems(items);
+});
+				</div>
+			</div>	
+		</div>
+		
+		<script>
+			$(function() {
+				$('.code-trigger').click(function() {
+					var code = $(this).next();
+					if (code.is(':visible')) {
+						code.hide();
+					} else {
+						code.show();
+					}
+				});
+
+				$('.continent-input').easySelect({
+					idKey: 'value',
+					textKey: 'name',
+					items: [
+						{ name: 'Africa', value: 1},
+						{ name: 'Antarctica', value: 2},
+						{ name: 'Asia', value: 3},
+						{ name: 'Australia', value: 4},
+						{ name: 'Europe', value: 5},
+						{ name: 'North America', value: 6},
+						{ name: 'South America', value: 7}
+					]
+				});
+
+				$('.state-input').easySelect({
+					idKey: 'id',
+					textKey: 'text'
+				});
+
+				$.get('data/states.json').done(function(items) {
+					// Each item looks like { id:'KS', text: 'Kansas' }
+					$('.state-input').data('easySelect').setItems(items);
+				});
+			});
+		</script>
+	</body>
+</html>
+
+
+
+

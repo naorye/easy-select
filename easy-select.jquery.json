@@ -1,0 +1,29 @@
+{
+	"name": "easy-select",
+	"title": "jQuery Easy Select",
+	"description": "Easy Select is simply a drop down list integrated with an input field.",
+	"keywords": [
+		"jquery",
+		"plugins"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "NaorYe",
+		"email": "naorye@gmail.com",
+		"url": "http://www.webdeveasy.com"
+	},
+	"maintainers": [
+		{
+			"name": "NaorYe",
+			"email": "naorye@gmail.com",
+			"url": "http://www.webdeveasy.com"
+		}
+	],
+	"bugs": "https://github.com/naorye/easy-select/issues",
+	"homepage": "http://www.webdeveasy.com/easy-select-plugin",
+	"docs": "http://www.webdeveasy.com/easy-select-plugin",
+	"download": "https://github.com/naorye/easy-select/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.continent-input, .state-input, .easy-select {
+    border: 1px solid #ced2d8;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+.easy-select {
+    border-top: none;
+}
+.easy-select .items {
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+}
+.continent-input, .state-input, .easy-select .item {
+    padding: 5px 12px;
+    /*color: #73838f;*/
+}
+.easy-select .item:not(.unselectable):hover {
+    background-color: #f5fafd;
+}
+
+.container {
+    margin: 10px;
+}
+.container .code {
+    display: none;
+    white-space: pre;
+    font-family: monospace;
+}
+
+.container .field {
+    padding: 30px;  
+}
+
+.title {
+    display: block;
+}
+
+.continent-input, .state-input, .container .code {
+    margin-left: 30px;
+}
+
+.note, .code-trigger {
+    font-size: 13px;
+    margin-left: 20px;
+
+}
+
+.note {
+    color: #ed5555;
+}
