@@ -2,6 +2,8 @@
 
 <a href="http://www.webdeveasy.com/easy-select-plugin" target="_blank">http://www.webdeveasy.com/easy-select-plugin</a>
 
+Demo <a href="http://www.webdeveasy.com/code/easy-select-plugin/demo/index.html" target="_blank">here</a>
+
 ## Getting Started
 1. Download the plugin from <a href="https://github.com/naorye/easy-select/archive/master.zip" target="_blank">here</a>.
 2. Add a reference to jquery.easy-select.js and easy-select.css in your page. You can use the minified version instead by using jquery.easy-select.min.js and easy-select.min.css.  
