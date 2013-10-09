@@ -1,6 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    margin-left: 30px;
+    position: relative;
 }
 
 .continent-input, .state-input, .easy-select {

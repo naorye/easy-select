@@ -52,11 +52,16 @@
             window.clearTimeout(this._dropDownCloseTimeoutId);
         },
         _positionDropDown: function() {
-            var pos = this.element.offset();
+            var pos = this.element.offset(),
+                body = $('body');
             this.dropDown.css({
                 top: pos.top + this.element.outerHeight(false),
                 left: pos.left,
-                width: this.element.outerWidth(false)
+                width: this.element.outerWidth(false),
+                'margin-left': '-' + body.css('margin-left'),
+                'margin-right': '-' + body.css('margin-right'),
+                'margin-top': '-' + body.css('margin-top'),
+                'margin-bottom': '-' + body.css('margin-bottom')
             });
         },
         _listItems: function() {
